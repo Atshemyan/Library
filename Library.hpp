@@ -101,6 +101,7 @@ class Library
             {
                 --CountOfGivenBooks;
                 this->AddMaterial(mtr);
+                m_BorrowedMaterials.erase(remove(m_BorrowedMaterials.begin(), m_BorrowedMaterials.end(), mtr));
             }
             
             
